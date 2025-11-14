@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>背景画像＋チャットアプリ</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* 背景画像を全画面にフィット */
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  /* チャットアプリを最前面に */
+  .chat-wrapper {
+    position: relative;
+    z-index: 9999 !important;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- 背景画像 -->
+<div class="bg" style="background-image: url('screenshot.png');"></div>
+
+<!-- チャットアプリ -->
+<div class="chat-wrapper">
+
+<script>
+  window.difyChatbotConfig = {
+    token: 'mrbxMePIVeTB73il',
+    inputs: {},
+    systemVariables: {},
+    userVariables: {},
+  }
+</script>
+
+<script
+  src="https://udify.app/embed.min.js"
+  id="mrbxMePIVeTB73il"
+  defer>
+</script>
+
+<style>
+  #dify-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+    left: 1.25rem !important;
+    right: auto !important;
+    z-index: 99999 !important;
+  }
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+    left: 1.25rem !important;
+    right: auto !important;
+    z-index: 99999 !important;
+  }
+</style>
+
+</div>
+
+</body>
+</html>
