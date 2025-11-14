@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>チャットボットテストページ</title>
+</head>
+<body>
+  <h1>チャットボットテストページ</h1>
+
+  <h2>会社案内</h2>
+  <p>弊社は最新のAI技術を活用したソリューションを提供しています。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>ご質問がありましたら、チャットボットにお尋ねください。</p>
+
+<script>
+ window.difyChatbotConfig = {
+  token: 'mrbxMePIVeTB73il',
+  inputs: {},
+  systemVariables: {},
+  userVariables: {},
+ }
+</script>
+
+<script
+ src="https://udify.app/embed.min.js"
+ id="mrbxMePIVeTB73il"
+ defer>
+</script>
+
+<style>
+  #dify-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+    left: 1.25rem !important;   /* ←追加：左下表示 */
+    right: auto !important;     /* ←追加：右側位置を無効化 */
+  }
+
+  #dify-chatbot-bubble-window {
+    width: 35rem !important;
+    height: 45rem !important;
+    left: 1.25rem !important;   /* ←追加：左側にウィンドウを寄せる */
+    right: auto !important;     /* ←追加：右側を無効化 */
+  }
+</style>
+
+
+</body>
+</html>
